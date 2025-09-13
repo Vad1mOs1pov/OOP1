@@ -9,7 +9,7 @@ namespace WindowsFormsApplication1.Model
 {
     internal class Item
     {
-        private int id;
+        private readonly int id;
         private string name;
         private string info;
         private float cost;

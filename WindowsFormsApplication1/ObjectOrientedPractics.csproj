@@ -46,11 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Customers.cs" />
-    <Compile Include="CustomerTab.cs">
+    <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerTab.Designer.cs">
-      <DependentUpon>CustomerTab.cs</DependentUpon>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Item.cs" />
     <Compile Include="Program.cs" />
@@ -67,8 +67,8 @@
     <Compile Include="View\Tabs\ItemTabs.Designer.cs">
       <DependentUpon>ItemTabs.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomerTab.resx">
-      <DependentUpon>CustomerTab.cs</DependentUpon>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -8,7 +8,7 @@ namespace WindowsFormsApplication1
 {
     class Customers
     {
-        private int id;
+        private readonly int id;
         private string fullname;
         private string address;
 
