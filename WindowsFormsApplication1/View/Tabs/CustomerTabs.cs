@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1.View.Customers
+namespace WindowsFormsApplication1.View.Tabs
 {
-    public partial class CustomerTab : UserControl
+    public partial class CustomerTabs : UserControl
     {
-        public CustomerTab()
+        Customer dima = new Customer();
+        public CustomerTabs()
         {
             InitializeComponent();
         }
@@ -54,7 +55,7 @@ namespace WindowsFormsApplication1.View.Customers
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            listBox1.Items.Add(dima);
         }
 
         private void splitContainer2_SplitterMoved(object sender, SplitterEventArgs e)
@@ -79,17 +80,17 @@ namespace WindowsFormsApplication1.View.Customers
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            dima.Adress = textBox3.Text;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            dima.Name = textBox2.Text;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,11 +99,6 @@ namespace WindowsFormsApplication1.View.Customers
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }

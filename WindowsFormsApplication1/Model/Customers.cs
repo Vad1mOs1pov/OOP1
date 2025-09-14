@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    class Customers
+    class Customer
     {
         private readonly int id;
         private string fullname;
         private string address;
-
+        public int Id
+        {
+            get
+            {
+                return Id = IdGenerator.GetNextId();
+            }
+            set
+            {
+                return;
+            }
+        }
         public string Name
         {
             get
@@ -39,7 +49,7 @@ namespace WindowsFormsApplication1
                 address = value;
             }
         }
-        public Customers() { }
+        public Customer() { }
 
     }
 }

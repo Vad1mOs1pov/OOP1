@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -13,6 +14,7 @@ namespace WindowsFormsApplication1.Model
         private string name;
         private string info;
         private float cost;
+
 
         public string Name
         {
@@ -57,5 +59,11 @@ namespace WindowsFormsApplication1.Model
             }
         }
         public Item() { }
+        
+            //this.Id = IdGenerator.GetNextId();
+            //this.Name = name;
+            //this.Info = info;
+            //sthis.Cost = cost;
+        
     }
 }

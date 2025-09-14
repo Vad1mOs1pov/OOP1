@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1.View.Tabs
+namespace WindowsFormsApplication1.View.Customers
 {
-    public partial class ItemTabs : UserControl
+    public partial class ItemTab : UserControl
     {
-        public ItemTabs()
+        public ItemTab()
         {
             InitializeComponent();
         }
@@ -98,6 +98,11 @@ namespace WindowsFormsApplication1.View.Tabs
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
